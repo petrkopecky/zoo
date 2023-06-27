@@ -1,6 +1,7 @@
 package pk.zoo.model;
 
 public class Employee extends Person {
+    private Long pin;
     private String email;
     private String phoneNumber;
 
@@ -28,5 +29,13 @@ public class Employee extends Person {
 
     public void setHourRateSalary(double hourRateSalary) {
         this.hourRateSalary = hourRateSalary;
+    }
+
+    public Long getPin() {
+        return pin;
+    }
+
+    public void setPin(Long pin) {
+        this.pin = pin;
     }
 }
